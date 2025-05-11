@@ -9,7 +9,7 @@ Describe "MachineInfoService" {
     Context "Get-MachineInfo" {
         It "Serial番号取得のテスト" {
             $result = [MachineInfoService]::New().getSerialNumber();
-            [System.Console]::WriteLine("テスト01:SerialNumberは"+$result)
+            [System.Console]::WriteLine("TEST01: SerialNumber is"+$result)
             $result | Should  -Not -BeNullOrEmpty
         }
     }
